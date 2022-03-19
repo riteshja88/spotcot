@@ -45,6 +45,7 @@ setuptools.setup(
     package_data={"": ["LICENSE"]},
     license=open("LICENSE").read(),
     long_description=open("README.rst").read(),
+    long_description_content_type="text/rst",
     zip_safe=False,
     include_package_data=True,
     install_requires=[
