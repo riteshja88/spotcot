@@ -4,7 +4,7 @@
 # Author:: Greg Albrecht W2GMD <oss@undef.net>
 # Copyright:: Copyright 2020 Orion Labs, Inc.
 # License:: Apache License, Version 2.0
-#
+nn#
 
 
 .DEFAULT_GOAL := all
@@ -81,6 +81,5 @@ upload_pip_package_centos7_deps:
 upload_pip_package_centos7: upload_pip_package_centos7_deps
 	python3 -m twine upload --skip-existing --repository testpypi dist/*
 	#user: __token__
-	#password: pypi-AgENdGVzdC5weXBpLm9yZwIkYmY0ZWE2ZDctZjA1Yi00MTIzLWJjZTMtMmYyM2ZmMzg4OThkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiBqGQ6A-M6yvpiP08GBa6Et-WjpwGSiS-FWOdD-Q1osiQ
-
+	#password: pypi-AgENdGVzdC5weXBpLm9yZwIkYmY0ZWE2ZDctZjA1Yi00MTIzLWJjZTMtMmYyM2ZmMzg4OThkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiBqGQ6....
 build_and_upload_pip: build_pip_package_centos7 upload_pip_package_centos7

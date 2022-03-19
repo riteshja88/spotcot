@@ -692,7 +692,7 @@ Uploading spotcot-2.0.2.tar.gz
 100%|####################################################################################################################################################################################################################| 13.2k/13.2k [00:01<00:00, 11.6kB/s]
   Skipping spotcot-2.0.2.tar.gz because it appears to already exist
 #user: __token__
-#password: pypi-AgENdGVzdC5weXBpLm9yZwIkYmY0ZWE2ZDctZjA1Yi00MTIzLWJjZTMtMmYyM2ZmMzg4OThkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiBqGQ6A-M6yvpiP08GBa6Et-WjpwGSiS-FWOdD-Q1osiQ
+#password: pypi-AgENdGVzdC5weXBpLm9yZwIkYmY0ZWE2ZDctZjA1Yi00MTIzLWJjZTMtMmYyM2ZmMzg4OThkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxf............
 
 [root@8c095799e6a5 spotcot]#
 ```
