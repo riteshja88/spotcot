@@ -65,3 +65,18 @@ test: lint pep8 pytest
 
 checkmetadata:
 	python setup.py check -s --restructuredtext
+
+
+build_pip_package_centos7_deps:
+	yum install python3 -y
+	python3 -m pip install --upgrade pip build twine
+
+build_pip_package_centos7: build_pip_package_centos7_deps
+	python3 -m build
+
+upload_pip_package_centos7: build_pip_package_centos7
+	python3 -m twine upload --skip-existing --repository testpypi dist/*
+	#user: __token__
+	#password: pypi-AgENdGVzdC5weXBpLm9yZwIkYmY0ZWE2ZDctZjA1Yi00MTIzLWJjZTMtMmYyM2ZmMzg4OThkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiBqGQ6A-M6yvpiP08GBa6Et-WjpwGSiS-FWOdD-Q1osiQ
+
+build_and_upload_pip: upload_pip_package_centos7
