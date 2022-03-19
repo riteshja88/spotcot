@@ -77,7 +77,7 @@ build_pip_package_centos7: build_pip_package_centos7_deps
 upload_pip_package_centos7_deps:
 	python3 -m pip install --upgrade pip build twine
 
-upload_pip_package_centos7: upload_pip_package_centos7_deps:
+upload_pip_package_centos7: upload_pip_package_centos7_deps
 	python3 -m twine upload --skip-existing --repository testpypi dist/*
 	#user: __token__
 	#password: pypi-AgENdGVzdC5weXBpLm9yZwIkYmY0ZWE2ZDctZjA1Yi00MTIzLWJjZTMtMmYyM2ZmMzg4OThkAAIleyJwZXJtaXNzaW9ucyI6ICJ1c2VyIiwgInZlcnNpb24iOiAxfQAABiBqGQ6A-M6yvpiP08GBa6Et-WjpwGSiS-FWOdD-Q1osiQ
