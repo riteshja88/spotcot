@@ -1,3 +1,6 @@
+Pip package for spotcot: https://test.pypi.org/project/spotcot/2.0.2/
+
+
 # Demo - How to build and upload pip package for spotcot (short)
 ```
 $ cat /etc/centos-release
