@@ -69,13 +69,14 @@ checkmetadata:
 
 build_pip_package_centos7_deps:
 	yum install python3 -y
-	python3 -m pip install --upgrade pip build twine
+	python3 -m pip install --upgrade pip build
 
 build_pip_package_centos7: build_pip_package_centos7_deps
 	python3 -m build
 
 upload_pip_package_centos7_deps:
-	python3 -m pip install --upgrade pip build twine
+	#python3 -m pip install --upgrade setuptools-rust pip twine
+	python3 -m pip install --upgrade setuptools-rust pip twine
 
 upload_pip_package_centos7: upload_pip_package_centos7_deps
 	python3 -m twine upload --skip-existing --repository testpypi dist/*
